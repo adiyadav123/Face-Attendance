@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Register</h1>
+        <br />
+        <form id="register-form">
+          <input
+            type="text"
+            id="reg_adm"
+            placeholder="Admission Number., Ex-2130"
+            required
+          />
+          <input
+            type="text"
+            id="reg_name"
+            placeholder="Name, Ex-Aditya"
+            required
+          />
+          <input
+            type="text"
+            id="reg_class"
+            placeholder="Class., Ex-10A"
+            required
+          />
+          <input type="file" name="image" id="reg_image">
+          <button id="reg_submit" type="reg_submit">Register</button>
+        </form>
+      </div>
+      <br />
+      <hr width="100%" color="gray" />
+      <br />
+      <div class="form dashboard" id="dashboard">
+        <h1>Dashboard</h1>
+        <br />
+        <div class="student1 student">
+          <img src="./assets/jaypal_sir.jfif" alt="" />
+          <br />
+          <p id="dash_name" class="dash_name tooltip">
+            Jaypal Singh <span class="tooltiptext">Name</span>
+          </p>
+          <p id="dash_class" class="dash_class tooltip">
+            10thA <span class="tooltiptext">Class</span>
+          </p>
+          <p id="dash_attendance" class="dash_attendance tooltip">
+            20 <span class="tooltiptext">Attendance</span>
+          </p>
+        </div>
+      </div>
+      <br />
+      <hr width="100%" color="gray" />
+      <br />
+      <div class="form">
+        <h1>Check Attendance</h1>
+        <form id="add-attendance-form">
+          <input
+            type="text"
+            id="check_adm"
+            placeholder="Admission Number., Ex-2130"
+            required
+          />
+          <input
+            type="text"
+            id="check_class"
+            placeholder="Class., Ex-10A"
+            required
+          />
+          <button id="check_submit" type="check_submit">
+            Check Attendance
+          </button>
+        </form>
+      </div>
+      <div class="form">
+        <h1>View Attendance</h1>
+        <br />
+        <img src="./assets/jaypal_sir.jfif" alt="" />
+        <p id="view_name" class="dash_name tooltip">
+          Jaypal Singh <span class="tooltiptext">Name</span>
+        </p>
+        <p id="view_class" class="dash_class tooltip">
+          10thA <span class="tooltiptext">Class</span>
+        </p>
+        <p id="view_attendance" class="dash_attendance tooltip">
+          20 <span class="tooltiptext">Attendance</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
